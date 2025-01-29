@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+        button:hover{
+            transform: scale(1.1);
+            transition: 0.05s linear;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <br><br>
+    <h1 class="text-center"><Strong>Table style : Demo 8</Strong></h1>
+    <div class="container border-0 rounded-5 pt-3" style="width: 70%;margin: 0 auto;box-shadow: 0px 0px 10px grey;">
+        <nav class="nav d-flex align-items-center justify-content-between p-3 bg-primary border-0" style="border-radius: 20px 20px 0 0;">
+            <div>
+                <h1 class="text-white"><b>Data List</b></h1>
+            </div>
+            <div class="d-flex align-items-center justify-content-center gap-3">
+                <div class="d-flex bg-light align-items-center justify-content-center rounded-2 gap-1 p-1">
+                    <button class="d-flex bg-danger align-items-center justify-content-center rounded-2 gap-1 p-1 border-0 text-white">Fitter</button>
+                    <!-- <p class="text-white bg-danger p-1 rounded-2" style="width: max-content;">Fitter</p> -->
+                    <button class="btn d-flex align-items-center justify-content-center bg-warning text-white rounded-2 border-0 h-25 p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ban" viewBox="0 0 16 16">
+                            <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
+                        </svg>
+                    </button>
+                    <button class="btn d-flex align-items-center justify-content-center bg-success text-white border-0 h-25 p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="btn bg-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                    </svg> Add new
+                </button>
+            </div>
+        </nav>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Full name</th>
+                    <th>Age</th>
+                    <th>Status</th>
+                    <th>Job title</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <!-- <img src="" alt=""> -->
+                        <div style="height: 40px;width: 40px;background-color: gray;border-radius: 5px;"></div>
+                    </td>
+                    <td>Vincent Williamson</td>
+                    <td>31</td>
+                    <td class="d-flex align-items-center gap-1"><div style="width: 10px;height: 10px;border-radius: 100%;background-color: forestgreen;"></div>Active</td>
+                    <td>IOS Developer</td>
+                    <td class="d-flex align-items-center gap-1">
+                        <button class="btn d-flex align-items-center justify-content-center bg-warning text-white border-0 h-25 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ban" viewBox="0 0 16 16">
+                                <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
+                            </svg>
+                        </button>
+                        <button class="btn d-flex align-items-center justify-content-center text-white bg-primary border-0 p-2 h-25">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                            </svg>
+                        </button>
+                        <button class="text-white d-flex align-items-center justify-content-center bg-danger border-0 h-25 rounded-2 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- <img src="" alt=""> -->
+                        <div style="height: 40px;width: 40px;background-color: gray;border-radius: 5px;"></div>
+                    </td>
+                    <td>Taylor Reyes</td>
+                    <td>22</td>
+                    <td class="d-flex align-items-center gap-1"><div style="width: 10px;height: 10px;border-radius: 100%;background-color: crimson;"></div>Blocket</td>
+                    <td>UI/UX Developer</td>
+                    <td class="d-flex align-items-center gap-1">
+                        <button class="btn d-flex align-items-center justify-content-center bg-success text-white border-0 h-25 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                            </svg>
+                        </button>
+                        <button class="btn d-flex align-items-center justify-content-center text-white bg-primary border-0 p-2 h-25">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                            </svg>
+                        </button>
+                        <button class="text-white d-flex align-items-center justify-content-center bg-danger border-0 h-25 rounded-2 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- <img src="" alt=""> -->
+                        <div style="height: 40px;width: 40px;background-color: gray;border-radius: 5px;"></div>
+                    </td>
+                    <td>Justin Block</td>
+                    <td>26</td>
+                    <td class="d-flex align-items-center gap-1"><div style="width: 10px;height: 10px;border-radius: 100%;background-color: forestgreen;"></div>Active</td>
+                    <td>Frontend Developer</td>
+                    <td class="d-flex align-items-center gap-1">
+                        <button class="btn d-flex align-items-center justify-content-center bg-warning text-white border-0 h-25 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ban" viewBox="0 0 16 16">
+                                <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
+                            </svg>
+                        </button>
+                        <button class="btn d-flex align-items-center justify-content-center text-white bg-primary border-0 p-2 h-25">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                            </svg>
+                        </button>
+                        <button class="text-white d-flex align-items-center justify-content-center bg-danger border-0 h-25 rounded-2 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- <img src="" alt=""> -->
+                        <div style="height: 40px;width: 40px;background-color: gray;border-radius: 5px;"></div>
+                    </td>
+                    <td>Sean Guzman</td>
+                    <td>26</td>
+                    <td class="d-flex align-items-center gap-1"><div style="width: 10px;height: 10px;border-radius: 100%;background-color: crimson;"></div>Blocket</td>
+                    <td>Web Decign</td>
+                    <td class="d-flex align-items-center gap-1">
+                        <button class="btn d-flex align-items-center justify-content-center bg-success text-white border-0 h-25 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                            </svg>
+                        </button>
+                        <button class="btn d-flex align-items-center justify-content-center text-white bg-primary border-0 p-2 h-25">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                            </svg>
+                        </button>
+                        <button class="text-white d-flex align-items-center justify-content-center bg-danger border-0 h-25 rounded-2 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- <img src="" alt=""> -->
+                        <div style="height: 40px;width: 40px;background-color: gray;border-radius: 5px;"></div>
+                    </td>
+                    <td>Keith Carter</td>
+                    <td>20</td>
+                    <td class="d-flex align-items-center gap-1"><div style="width: 10px;height: 10px;border-radius: 100%;background-color: forestgreen;"></div>Active</td>
+                    <td>Graphic Design</td>
+                    <td class="d-flex align-items-center gap-1">
+                        <button class="btn d-flex align-items-center justify-content-center bg-warning text-white border-0 h-25 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ban" viewBox="0 0 16 16">
+                                <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
+                            </svg>
+                        </button>
+                        <button class="btn d-flex align-items-center justify-content-center text-white bg-primary border-0 p-2 h-25">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                            </svg>
+                        </button>
+                        <button class="text-white d-flex align-items-center justify-content-center bg-danger border-0 h-25 rounded-2 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-flex align-items-center justify-content-center gap-2">
+            <div class="text-white bg-secondary p-2 rounded-1">Prev</div>
+            <div class="text-white bg-primary   p-2 rounded-1">1</div>
+            <div class="text-white bg-secondary p-2 rounded-1">2</div>
+            <div class="text-white bg-secondary p-2 rounded-1">3</div>
+            <div class="text-white bg-secondary p-2 rounded-1">4</div>
+            <div class="text-white bg-secondary p-2 rounded-1">5</div>
+            <div class="text-white bg-secondary p-2 rounded-1"><del>Next</del></div>
+        </div>
+        <br>
+    </div>
+
+    
+    <!-- english-homework-Alchemist-part-two -->
+    <!-- english-homework-Alchemist-part-two -->
+    <!-- english-homework-Alchemist-part-two -->
+    <!-- english-homework-Alchemist-part-two -->
+    <!-- english-homework-Alchemist-part-two -->
+    <br><br><br>
+    <div style="width: 70%; margin: 0 auto;" class="text-dark">
+        <section>
+            <h2 class="text-center"><strong><mark>English Homework</mark></strong></h2>
+            <p><strong><mark>1. Working at the Crystal Shop:</mark></strong><br>
+
+                •   Seeking Employment: After being robbed, Santiago finds work at a crystal shop in Tangier to earn enough money to return to Spain.<br>
+                •   The Crystal Merchant: He forms a relationship with the shop's owner, who also has his own dreams, but has not pursued them. He teaches Santiago that he has to take the first step if he truly wants to achieve his goals.<br>
+                •  Transforming the Business: Santiago’s ideas help the merchant's business flourish. He introduces new strategies like displaying crystal outside the shop, attracting more customers and making the shop more profitable.<br>
+                •  The Merchant's Fear of Change: Despite his own dreams of traveling to Mecca, the merchant is afraid to pursue them, demonstrating that even those with a purpose, fail to make the required leap of faith to make them real.<br>
+                • The Boy's Lessons: The boy learns about the importance of taking action and also that there are dreams that should be followed and that there are other dreams that one might have to sacrifice, but he has to learn to distinguish between one and the other.<br>
+            </p><br>
+            <p><strong><mark>2. Joining a Caravan Across the Desert:</mark></strong><br>
+
+                •   Leaving Tangier: Santiago decides to pursue his Personal Legend and joins a caravan crossing the Sahara desert. He is ready to take his next big step toward the pyramids.<br>
+                •   The Englishman and His Studies: On the caravan, he meets an Englishman searching for an alchemist, who is obsessed with his studies. He teaches Santiago that knowledge is important, but that one also needs to live in the world.<br>
+                •   Learning the Language of the World: Santiago learns to pay attention to the omens and the unspoken communication of the desert, and he sees it as a "language of the world"<br>
+                • Recognizing the Soul of the World: He starts to understand that everything is connected and that the universe is communicating to him and showing him the way to his Personal Legend.<br>
+            </p><br>
+            <p><strong><mark>3. Love and the Oasis:</mark></strong><br>
+
+                •   Arrival at the Oasis: The caravan arrives at a large oasis, where they must stay because of the tribal wars that are happening in the area.<br>
+                •   Meeting Fatima: Santiago meets and falls in love with Fatima, a desert woman who he instantly feels connected to. She understands and encourages him to pursue his Personal Legend.<br>
+                •   Love as a Part of the Journey: His love for Fatima shows him that love is part of life and that he can experience it without losing focus on his dreams.<br>
+                •   Fatima's Acceptance and Encouragement: Fatima tells Santiago that she will wait for him. She sees that it is his destiny to pursue his Personal Legend and she is ok with being a part of that.<br>
+                •   The Vision of an Attack: While at the oasis, Santiago has a vision of the oasis being attacked.<br>
+                •   Warning the Tribal Chiefs: He uses this vision to warn the tribal chiefs, who believe him and prepare for the attack. This shows his importance and that he is able to see the language of the world.<br>
+            </p><br>
+            <p><strong><mark>4. The Alchemist and the Journey to the Pyramids:</mark></strong><br>
+
+                •   Meeting the Alchemist: After a successful battle, he meets the alchemist. He is an old and mysterious figure, who teaches Santiago about the Soul of the World and alchemy.<br>
+                •   Following the Heart: He learns that there is only one way to learn, through action, by following your heart, and by listening to the signs of the world.<br>
+                •   The Importance of the Journey: He is taught that the journey is as important as the goal and that it is an essential part of his Personal Legend.<br>
+                •   Transmuting Lead to Gold: He learns that transmuting lead to gold is a metaphor for personal transformation.<br>
+                •   The Power of Love: He is taught the importance of love, and of letting go of what you love, which will bring you back to the people that love you as well.<br>
+                • The Final Test: The alchemist makes Santiago to take one final test, where he has to be alone and use his own wisdom to follow the language of the world.<br>
+            </p><br>
+            <p><strong><mark>5. The Journey to the Pyramids:</mark></strong><br>
+
+                •   Leaving Fatima: With sadness, he leaves Fatima behind to continue to pursue his Personal Legend. This shows that he has accepted his path.<br>
+                •   Continuing the Journey: He continues to travel across the desert with the alchemist, and they encounter many tests and difficulties.<br>
+                •  The Power of the Heart: He learns that he has to follow his heart and trust his intuition and emotions, to find the way to his treasure.<br>
+            </p><br><br><br><br>
+        </section>
+    </div>
+    <!-- english-homework-Alchemist-part-two -->
+    <!-- english-homework-Alchemist-part-two -->
+    <!-- english-homework-Alchemist-part-two -->
+    <!-- english-homework-Alchemist-part-two -->
+    <!-- english-homework-Alchemist-part-two -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
