@@ -1,1 +1,1 @@
-bootstrap-table-hw-hover
+bootstrap table homework with hover.
